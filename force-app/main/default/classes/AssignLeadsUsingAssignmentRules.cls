@@ -8,7 +8,7 @@ public class AssignLeadsUsingAssignmentRules {
             Lead Leads=[select id from lead where lead.id in :LeadIds];
             Leads.setOptions(dmo);
             update Leads;
-            system.debug('Hello');
+            system.debug('Hello1');
    }
     
 
