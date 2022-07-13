@@ -1,0 +1,31 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+<!--	
+    <aura:attribute name="messageFromEvent" type ="String" />
+    <aura:attribute name="numofEventsCalled" type ="Integer" default ="0"/>
+    
+    
+    <aura:handler name="CompName"  event = "c:TrainingComponentEvent_Event" action="{!c.handleComponentEvent}"/>
+    
+    <c:ComponentEvent_NotifierComponent />   
+    
+    <p> {!v.messageFromEvent} </p>
+    <p> num of events: {!v.numofEventsCalled} </p>
+    
+  -->
+    
+     <aura:attribute name="messageFromEvent" type ="String" />
+     <aura:attribute name="messageFromEvent1" type ="String" />
+    <aura:attribute name="numofEventsCalled" type ="Integer" default ="0"/>
+    
+    
+    <aura:handler event = "c:TrainingComponentEvent_Event" action="{!c.handleComponentEvent}"/>
+    
+
+    
+    <p> {!v.messageFromEvent} </p>
+    <p> {!v.messageFromEvent1} </p>
+    <p> num of events: {!v.numofEventsCalled} </p>
+      
+    
+    
+</aura:component>

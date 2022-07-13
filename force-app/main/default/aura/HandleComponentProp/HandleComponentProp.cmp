@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:handler event="c:ComponentEventPro" name="SourceComponent" action="{!c.handleEvent}"
+                  includeFacets="true" phase="capture"/>
+    <div>
+        handler <br/>
+       {!v.body}
+    </div>
+</aura:component>

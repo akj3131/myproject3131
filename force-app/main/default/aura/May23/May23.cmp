@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+<div class="slds-p-around_small">
+    
+    <h1 class="red">This is first</h1>
+    <p>This is second</p>
+    <div style="background-color:blue; color:white">This is third</div>
+    <Span> This is fourth</Span>
+    </div>
+    
+</aura:component>

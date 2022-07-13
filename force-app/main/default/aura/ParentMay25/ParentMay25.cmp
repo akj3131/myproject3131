@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="Value2" type="string" default="Hello SF" />
+    Parent - {!v.Value2} <br/>
+    
+    <c:ChildMay25 Value1="{#v.Value2}"/> <br/>
+    <lightning:button label ="click parent" onclick="{!c.changeparent}" />
+      
+    
+</aura:component>

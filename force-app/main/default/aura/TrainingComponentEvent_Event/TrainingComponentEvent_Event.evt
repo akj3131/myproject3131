@@ -1,0 +1,13 @@
+<!-- <aura:event type="COMPONENT" >
+            
+            <aura:attribute name="message" type="String" />    
+       </aura:event>
+
+-->
+
+
+<aura:event type="APPLICATION" >
+            
+            <aura:attribute name="message" type="String" />    
+    <aura:attribute name="message1" type="String" />  
+       </aura:event>

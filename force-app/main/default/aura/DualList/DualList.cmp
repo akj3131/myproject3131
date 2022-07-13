@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="options" type="List" />
+
+    <aura:attribute name="selectedValues" type="List" default="['en','it']" />
+    <aura:attribute name="requiredValues" type="List" default="['en','de']" />
+    
+    <lightning:dualListbox name="languages"
+                           label= "Select Languages"
+                           sourceLabel="Available"
+                           selectedLabel="Selected"
+                           fieldLevelHelp="Select your preferred languages"
+                           value="{!v.selectedValues}"
+                           requiredOptions="{!v.requiredValues}"
+                           options="{!v.options}"
+                           onchange="{! c.handleChange }"/>
+</aura:component>

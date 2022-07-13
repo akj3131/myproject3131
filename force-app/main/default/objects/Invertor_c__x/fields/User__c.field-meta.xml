@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User__c</fullName>
+    <externalDeveloperName>OwnerId</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>User</label>
+    <length>50</length>
+    <referenceTo>User__x</referenceTo>
+    <relationshipLabel>Invertors</relationshipLabel>
+    <relationshipName>Invertors1</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

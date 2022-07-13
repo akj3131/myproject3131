@@ -1,0 +1,10 @@
+<aura:component >
+    
+    <aura:attribute name="LoginUser" type="String"/>
+        
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    {!v.LoginUser.Profile.Name}
+
+	
+</aura:component>

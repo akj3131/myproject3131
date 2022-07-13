@@ -1,0 +1,19 @@
+<aura:component implements='lightning:availableForFlowScreens,flexipage:availableForAllPageTypes'>
+    <aura:attribute name="label" type="String" />
+     <aura:attribute name="required" type="boolean" />
+     <aura:attribute name="value" type="String" />
+     <aura:attribute name="placeholder" type="String" />
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   
+    <aura:attribute name="validate" type="Aura.Action" />
+    
+    <lightning:inputRichText labelVisible="true"
+                             label="{!v.label}"
+                             required="{!v.required}"
+                             variant="bottom-toolbar" 
+                             value="{!v.value}" 
+                             placeholder="{!v.placeholder}" />
+    
+</aura:component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indeed_Salary_VR</fullName>
+    <active>false</active>
+    <description>Indeed_Salary_VR</description>
+    <errorConditionFormula>Salary_Expected__c &gt; 1000</errorConditionFormula>
+    <errorDisplayField>Salary_Expected__c</errorDisplayField>
+    <errorMessage>Salary is High</errorMessage>
+</ValidationRule>

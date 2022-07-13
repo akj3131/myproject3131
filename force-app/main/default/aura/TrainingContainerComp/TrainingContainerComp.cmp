@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    
+        <c:ComponentEvent_NotifierComponent />
+    <c:ComponentEvent_HandlerComponent />
+
+    
+    
+    
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component implements="lightning:isUrlAddressable">
+    
+    <aura:attribute name="cartItemList" type="Object" />
+	<aura:iteration items="{!v.cartItemList}" var="item" >
+        <c:CartItem cartItem="{!item}" />
+    </aura:iteration>
+</aura:component>

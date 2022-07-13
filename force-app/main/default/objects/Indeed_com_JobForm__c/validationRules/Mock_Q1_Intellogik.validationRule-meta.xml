@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mock_Q1_Intellogik</fullName>
+    <active>true</active>
+    <description>Mock_Q1_Intellogik</description>
+    <errorConditionFormula>((ISPICKVAL(Preferred_Country__c , &apos;USA&apos;))
+||
+(ISPICKVAL(Preferred_Country__c , &apos;UK&apos;)))
+&amp;&amp;
+((Experience__c &lt;= 0)
+||
+(Experience__c &gt; 25))
+&amp;&amp;
+( $UserRole.Name  &lt;&gt; &apos;CEO&apos;)</errorConditionFormula>
+    <errorMessage>Candidate with such experience are not applicable for USA region</errorMessage>
+</ValidationRule>

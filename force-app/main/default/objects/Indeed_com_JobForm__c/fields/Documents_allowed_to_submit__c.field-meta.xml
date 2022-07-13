@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documents_allowed_to_submit__c</fullName>
+    <externalId>false</externalId>
+    <label>Documents allowed to submit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Driving License</fullName>
+                <default>false</default>
+                <label>Driving License</label>
+            </value>
+            <value>
+                <fullName>Age Certificate</fullName>
+                <default>false</default>
+                <label>Age Certificate</label>
+            </value>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

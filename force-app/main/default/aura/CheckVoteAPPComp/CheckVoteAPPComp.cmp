@@ -1,0 +1,25 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	  
+    
+    <aura:attribute name="EligibleorNot" type="Boolean" />
+    
+    <ui:inputText label="First Name"  aura:id="FN" placeholder="Enter First Name" />
+    <ui:inputText label="Last Name"  aura:id="LN" placeholder="Enter Last Name" />
+    <ui:inputText label="Your Age"  aura:id="Age" placeholder="Enter Age Name" />
+    <ui:button  aura:id="OutlookFormat" label="CheckEligibility" press= "{!c.getEligibility}" /> 
+    
+    
+    
+    
+    <aura:if isTrue="{!v.EligibleorNot}"> 
+             Congrats! you can vote
+           <ui:button  label="Give Vote" />
+     <aura:set attribute= "else">
+         Sorry! you cant vote
+         <ui:button  label="Cancel Vote" />
+        </aura:set>
+    </aura:if>         
+             
+             
+             
+</aura:component>

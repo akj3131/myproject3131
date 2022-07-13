@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute type="object" name="record"/>
+    <aura:attribute type="object" name="recordFields"/>
+    <aura:attribute type="string" name="recordError"/>
+    
+    <force:recordData aura:id="recordViewer"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      Mode="VIEW"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.recordFields}"
+                      targetError="{!v.recordError}"
+                      />
+    <div>
+        Using TargetFields - {!v.recordFields.Name} <br/>
+        Using TargetRecords - {!v.record.fields.brewery_Name__c.value} 
+    
+    </div>
+	
+</aura:component>

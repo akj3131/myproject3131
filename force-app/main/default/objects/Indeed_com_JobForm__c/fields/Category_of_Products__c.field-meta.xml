@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_of_Products__c</fullName>
+    <externalId>false</externalId>
+    <label>Category of Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+                <label>Communication Devices</label>
+            </value>
+            <value>
+                <fullName>Home Appliances</fullName>
+                <default>false</default>
+                <label>Home Appliances</label>
+            </value>
+            <value>
+                <fullName>Apparels</fullName>
+                <default>false</default>
+                <label>Apparels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    
+    <aura:registerEvent name="CompName" type= "c:TrainingComponentEvent_Event" />
+	
+    <h1> Case study of component</h1>
+    <br/>
+    <br/>
+    <lightning:button label="Click here to fire a component" onclick ="{!c.firecomponentevent}" />
+    
+</aura:component>

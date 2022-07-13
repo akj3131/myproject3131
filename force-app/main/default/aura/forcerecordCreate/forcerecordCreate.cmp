@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <lightning:button value="Quick Contact" label="Quick Contact" variant="brand" onclick="{!c.createContact}" />
+    <lightning:button value="Edit Account" label="Edit Account" variant="brand" onclick="{!c.editRecord}" />
+	
+</aura:component>

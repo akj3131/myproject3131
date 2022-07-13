@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attributes__c</fullName>
+    <externalId>false</externalId>
+    <label>Attributes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Brand_Names__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4 GB RAM</fullName>
+                <default>false</default>
+                <label>4 GB RAM</label>
+            </value>
+            <value>
+                <fullName>8 GB RAM</fullName>
+                <default>false</default>
+                <label>8 GB RAM</label>
+            </value>
+            <value>
+                <fullName>Whirlpool Model 123</fullName>
+                <default>false</default>
+                <label>Whirlpool Model 123</label>
+            </value>
+            <value>
+                <fullName>Whirlpool Model 456</fullName>
+                <default>false</default>
+                <label>Whirlpool Model 456</label>
+            </value>
+            <value>
+                <fullName>Red Shirt</fullName>
+                <default>false</default>
+                <label>Red Shirt</label>
+            </value>
+            <value>
+                <fullName>Black Shirt</fullName>
+                <default>false</default>
+                <label>Black Shirt</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Nokia</controllingFieldValue>
+            <controllingFieldValue>OnePlus</controllingFieldValue>
+            <valueName>4 GB RAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nokia</controllingFieldValue>
+            <controllingFieldValue>OnePlus</controllingFieldValue>
+            <valueName>8 GB RAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Whirlpool Model 123</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Whirlpool Model 456</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Peter England</controllingFieldValue>
+            <valueName>Red Shirt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Peter England</controllingFieldValue>
+            <valueName>Black Shirt</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
