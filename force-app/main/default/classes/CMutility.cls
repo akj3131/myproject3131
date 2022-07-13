@@ -23,6 +23,9 @@ public class CMutility {
         System.debug(record);
     }
     
+    public static void name(){
+        System.debug("hello");
+    }
     
     
 }
