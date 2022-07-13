@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >
+	
+   <!-- <aura:attribute name="Sample"  type="string" default="123" description="Random" >/ </aura:attribute> -->
+     
+    <!--        scenario1       
+    <ui:inputText aura:id="FName" label= "FirstName" placeholder="Enter Firstname"  />
+    <ui:inputText aura:id="LName" label= "LastName" placeholder="Enter Lastname"  />
+    <ui:button aura:id="ButtonforFirstApp" label="Submit" press="{!c.getInfo}" />
+    <ui:outputText aura:id="DisplayName" value="" />
+       
+    -->
+    
+   <aura:attribute name="EligileorNot" type="Boolean" default="true"  >/ </aura:attribute> 
+    
+    <ui:inputText aura:id="UFName" label= "FirstName" placeholder="Enter Firstname"  />
+    <ui:inputText aura:id="ULName" label= "LastName" placeholder="Enter Lastname"  />
+    <ui:inputText aura:id="UAge" label= "Age" placeholder="Enter Age"  />
+    <ui:button aura:id="AgeCheck" label="Check Eligibility " press="{!c.getInfo}" />
+   
+    
+    <aura:if isTrue="{!v.EligileorNot}">
+        	Congrats! You are eligible for vote
+        	<ui:button aura:id="VoteButton" label="Vote Button"/>
+        
+     <aura:set attribute="else">
+            Sorry!you are not eligible for vote
+         <ui:button aura:id="CancelButton" label="Cancel Buton" />
+      </aura:set>
+                              
+        
+    </aura:if>
+    
+    
+    
+</aura:component>

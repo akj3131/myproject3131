@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+	 <lightning:overlayLibrary aura:id="overlayLib1"/>
+    <lightning:button name="modal" label="Show Modal" onclick="{!c.handleShowModal}"/>
+    
+    <br/>
+
+ <lightning:navigation aura:id="navigation"/>
+    <lightning:button value="Navigate" label="Navigate" onclick="{!c.navigateUrl}"/>
+    
+    
+    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Account">
+        <div class="slds-box">
+            <lightning:outputField fieldName="Name" />
+           <lightning:outputField fieldName="Industry" />
+        </div>
+    </lightning:recordViewForm>
+    
+    
+    <lightning:recordEditForm       
+                              objectApiName="Account"  
+                              onsubmit="{!c.handleSubmit}"
+                              onsuccess="{!c.handleSuccess}"
+        					  recordID="{!v.recordId}"
+                              onLoad="{!c.handleLoad}" >
+        <lightning:messages /> 
+        
+        <lightning:inputField fieldName="Name" />    
+        <lightning:inputField fieldName="Industry" />    
+      <div class="slds-m-medium"> 
+       
+        <lightning:button variant="brand" type="submit" label="save" name="save" />  
+           </div>
+          </lightning:recordEditForm>
+    
+    
+ {!v.body}
+    <lightning:button onclick="{!c.createButton}" label="create new button" value="create new button" />  
+    
+</aura:component>

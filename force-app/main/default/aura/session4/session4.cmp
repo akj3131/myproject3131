@@ -1,0 +1,24 @@
+<aura:component>
+	
+    <aura:attribute type='Boolean' name='Truly' default='True' />
+    <aura:attribute type="List" name="ListVal" default="['True','False']" />
+    
+   <aura:attribute type="List" name="mapvar" default="[]" />
+  
+    <aura:if isTrue="{!v.Truly}" >
+             True
+      <aura:set attribute='else'>
+        False
+    </aura:set>
+    </aura:if>
+    <br/>
+<aura:iteration items="{!v.ListVal}" var="item">
+    {!item} <br/>
+</aura:iteration>
+  <aura:iteration items="{!v.mapvar}" var="map">
+   key : - {!map.key} and Value : {!map.value}<br/>
+</aura:iteration>
+
+  <lightning:button variant="brand" label="Click" title="Base action" onclick="{!c.CreateMap }"/>
+
+</aura:component>

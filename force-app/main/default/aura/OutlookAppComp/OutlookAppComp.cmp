@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <ui:inputText label="First Name"  aura:id="FN" placeholder="Enter First Name" />
+   <aura:attribute Name="MiddleName" type="string" default="Kumar" description="This is a field for mid name" />
+    The mid name is = {!v.MiddleName}
+    <ui:inputText label="Last Name"  aura:id="LN" placeholder="Enter Last Name" />
+    <ui:button  aura:id="OutlookFormat" label="Submit" press= "{!c.getOutlook}" /> 
+    <ui:outputText aura:id="FinalName" value="" />
+  <ui:inputText label="Gender"  aura:id="EmpGender" placeholder="Enter Gender Name" />
+</aura:component>

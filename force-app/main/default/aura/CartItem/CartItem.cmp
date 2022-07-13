@@ -1,0 +1,4 @@
+<aura:component >
+	
+       <aura:attribute name="cartItem" type="Object" />
+</aura:component>

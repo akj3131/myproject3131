@@ -1,0 +1,20 @@
+<aura:component implements="lightning:availableForFlowScreens">
+	
+    <aura:attribute name="currentStage" type="String" />
+    <aura:attribute name="activeStages" type="String[]" />
+    
+    
+    <lightning:progressIndicator currentStep="{!v.currentStage}" type="base" hasError="true" variant="base">
+        
+        <aura:iteration items="{!v.activeStages}" var="step">
+            <lightning:progressStep label="{!step }" value="{!step }"/>
+        </aura:iteration>
+        
+    </lightning:progressIndicator>
+        
+
+    
+    
+    
+    
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component >
+    <c:AMChild aura:id="childcmp" />
+    <Lightning:Button name="Invoke child" label="Invoke child" onclick="{!c.doParent}" />
+</aura:component>
